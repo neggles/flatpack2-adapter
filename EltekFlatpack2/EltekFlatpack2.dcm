@@ -1,0 +1,13 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LMR36520ADDAR
+D Simple Switcher Synchronous Buck Regulator, Vin=4.2-65V, Iout=2A, F=340-460kHz, Adjustable output voltage, HSOP-8
+K simple-switcher synchronous buck step-down voltage-regulator
+F https://www.ti.com/lit/gpn/lmr36520
+$ENDCMP
+#
+$CMP RS12-4805SZ
+D Isolated DC-DC Buck Converter, Vin 18-75V, Vout 5V, 2.4A
+$ENDCMP
+#
+#End Doc Library

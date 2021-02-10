@@ -1,0 +1,2 @@
+(sym_lib_table    (lib (name archive)(type Legacy)(uri "${KIPRJMOD}/EltekFlatpack2-archive.lib")(options "")(descr ""))
+  (lib (name EltekFlatpack2)(type Legacy)(uri ${KIPRJMOD}/EltekFlatpack2.lib)(options "")(descr ""))  (lib (name EltekFlatpack2-rescue)(type Legacy)(uri ${KIPRJMOD}/EltekFlatpack2-rescue.lib)(options "")(descr "")(disabled)))

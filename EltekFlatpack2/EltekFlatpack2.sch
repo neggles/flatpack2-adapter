@@ -1,0 +1,521 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Eltek Flatpack2 Adapter PCB"
+Date "2021-01-25"
+Rev "1"
+Comp "omnom ITS"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L EltekFlatpack2:CON_Flatpack2 PC1
+U 1 1 449C7C68
+P 3500 3400
+F 0 "PC1" H 3200 4300 42  0000 L CNN
+F 1 "Flatpack2" H 3500 3400 50  0001 C CNN
+F 2 "EltekFlatpack2:CON_Edge_Flatpack2_AllContacts" H 3500 3400 50  0001 C CNN
+F 3 "" H 3500 3400 50  0001 C CNN
+	1    3500 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2650 4000 2650
+Wire Wire Line
+	4000 2850 4100 2850
+Wire Wire Line
+	4000 3750 4100 3750
+Wire Wire Line
+	4100 3300 4000 3300
+$Comp
+L power:Earth #PWR01
+U 1 1 60127A5D
+P 4100 3750
+F 0 "#PWR01" H 4100 3500 50  0001 C CNN
+F 1 "Earth" H 4100 3600 50  0001 C CNN
+F 2 "" H 4100 3750 50  0001 C CNN
+F 3 "~" H 4100 3750 50  0001 C CNN
+	1    4100 3750
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:LINE #PWR03
+U 1 1 6012BEEF
+P 4100 4150
+F 0 "#PWR03" H 4100 4000 50  0001 C CNN
+F 1 "LINE" V 4115 4278 50  0000 L CNN
+F 2 "" H 4100 4150 50  0001 C CNN
+F 3 "" H 4100 4150 50  0001 C CNN
+	1    4100 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:NEUT #PWR02
+U 1 1 6012C5DF
+P 4100 3950
+F 0 "#PWR02" H 4100 3800 50  0001 C CNN
+F 1 "NEUT" V 4115 4078 50  0000 L CNN
+F 2 "" H 4100 3950 50  0001 C CNN
+F 3 "" H 4100 3950 50  0001 C CNN
+	1    4100 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4000 3950 4100 3950
+Wire Wire Line
+	4100 4150 4000 4150
+Wire Wire Line
+	7400 2400 7500 2400
+$Comp
+L power:LINE #PWR04
+U 1 1 60129558
+P 7400 2400
+F 0 "#PWR04" H 7400 2250 50  0001 C CNN
+F 1 "LINE" V 7415 2528 50  0000 L CNN
+F 2 "" H 7400 2400 50  0001 C CNN
+F 3 "" H 7400 2400 50  0001 C CNN
+	1    7400 2400
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:NEUT #PWR05
+U 1 1 6012A631
+P 7400 2600
+F 0 "#PWR05" H 7400 2450 50  0001 C CNN
+F 1 "NEUT" V 7415 2728 50  0000 L CNN
+F 2 "" H 7400 2600 50  0001 C CNN
+F 3 "" H 7400 2600 50  0001 C CNN
+	1    7400 2600
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:Earth #PWR0106
+U 1 1 6011D8EA
+P 7000 2600
+F 0 "#PWR0106" H 7000 2350 50  0001 C CNN
+F 1 "Earth" H 7000 2450 50  0001 C CNN
+F 2 "" H 7000 2600 50  0001 C CNN
+F 3 "~" H 7000 2600 50  0001 C CNN
+	1    7000 2600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 JA1
+U 1 1 C3E76336
+P 7700 2500
+F 0 "JA1" H 7800 2550 50  0000 L CNN
+F 1 "AC_IN" H 7800 2450 50  0000 L CNN
+F 2 "1 My Footprints:1605540000" H 7700 2500 50  0001 C CNN
+F 3 "" H 7700 2500 50  0001 C CNN
+F 4 "TE Connectivity" H 7700 2500 50  0001 C CNN "MANUFACTURER"
+F 5 "2342084-3" H 7700 2500 50  0001 C CNN "PN"
+	1    7700 2500
+	1    0    0    -1  
+$EndComp
+Text Label 4100 2850 0    50   ~ 0
+VBUS-
+Text Label 4100 2650 0    50   ~ 0
+VBUS+
+$Comp
+L Connector_Generic:Conn_01x03 JA3
+U 1 1 6021B7BB
+P 7700 3750
+F 0 "JA3" H 7800 3800 50  0000 L CNN
+F 1 "DC OUT" H 7800 3700 50  0000 L CNN
+F 2 "1 My Footprints:TE_2204529-1" H 7700 3750 50  0001 C CNN
+F 3 "~" H 7700 3750 50  0001 C CNN
+	1    7700 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3650 7500 3650
+$Comp
+L power:Earth #PWR0108
+U 1 1 601D5ACD
+P 7000 3850
+F 0 "#PWR0108" H 7000 3600 50  0001 C CNN
+F 1 "Earth" H 7000 3700 50  0001 C CNN
+F 2 "" H 7000 3850 50  0001 C CNN
+F 3 "~" H 7000 3850 50  0001 C CNN
+	1    7000 3850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3850 7400 3850
+$Comp
+L Device:R_Small R1
+U 1 1 601F2C9B
+P 4500 3200
+F 0 "R1" H 4450 3150 50  0000 R CNN
+F 1 "120R" H 4450 3250 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 3200 50  0001 C CNN
+F 3 "~" H 4500 3200 50  0001 C CNN
+	1    4500 3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 2600 7400 2600
+Wire Wire Line
+	7000 2500 7000 2600
+Wire Wire Line
+	7000 2500 7500 2500
+$Comp
+L power:GNDD #PWR06
+U 1 1 6030F81D
+P 4100 3400
+F 0 "#PWR06" H 4100 3150 50  0001 C CNN
+F 1 "GNDD" H 4100 3250 50  0000 C CNN
+F 2 "" H 4100 3400 50  0001 C CNN
+F 3 "" H 4100 3400 50  0001 C CNN
+	1    4100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDD #PWR08
+U 1 1 60310057
+P 5700 2650
+F 0 "#PWR08" H 5700 2400 50  0001 C CNN
+F 1 "GNDD" V 5700 2450 50  0000 C CNN
+F 2 "" H 5700 2650 50  0001 C CNN
+F 3 "" H 5700 2650 50  0001 C CNN
+	1    5700 2650
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	4100 3300 4100 3400
+Wire Wire Line
+	4300 3000 4500 3000
+Text Label 4700 3000 0    50   ~ 0
+CAN+
+Wire Wire Line
+	4300 3400 4500 3400
+Text Label 4700 3400 0    50   ~ 0
+CAN-
+Wire Wire Line
+	4300 3100 4300 3000
+Wire Wire Line
+	4000 3100 4300 3100
+Wire Wire Line
+	4300 3200 4300 3400
+Wire Wire Line
+	4000 3200 4300 3200
+Wire Wire Line
+	4500 3000 4500 3100
+Connection ~ 4500 3000
+Wire Wire Line
+	4500 3000 4700 3000
+Wire Wire Line
+	4500 3300 4500 3400
+Connection ~ 4500 3400
+Wire Wire Line
+	4500 3400 4700 3400
+Text Label 5700 2550 2    50   ~ 0
+CAN-
+Text Label 5700 2450 2    50   ~ 0
+CAN+
+Text Label 7400 3650 2    50   ~ 0
+VBUS+
+Text Label 7400 3850 2    50   ~ 0
+VBUS-
+Text Label 5700 2350 2    50   ~ 0
+VCCD
+Wire Wire Line
+	5800 2350 5700 2350
+Wire Wire Line
+	5700 2450 5800 2450
+Wire Wire Line
+	5800 2550 5700 2550
+Wire Wire Line
+	5700 2650 5800 2650
+Wire Wire Line
+	7500 3750 7000 3750
+Wire Wire Line
+	7000 3750 7000 3850
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 6023071B
+P 3400 4700
+F 0 "H1" H 3500 4749 50  0000 L CNN
+F 1 "M3" H 3500 4658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad_TopBottom" H 3400 4700 50  0001 C CNN
+F 3 "~" H 3400 4700 50  0001 C CNN
+	1    3400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 60231090
+P 3800 4700
+F 0 "H2" H 3900 4749 50  0000 L CNN
+F 1 "M3" H 3900 4658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad_TopBottom" H 3800 4700 50  0001 C CNN
+F 3 "~" H 3800 4700 50  0001 C CNN
+	1    3800 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 6023A0D3
+P 4200 4700
+F 0 "H3" H 4300 4749 50  0000 L CNN
+F 1 "M3" H 4300 4658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad_TopBottom" H 4200 4700 50  0001 C CNN
+F 3 "~" H 4200 4700 50  0001 C CNN
+	1    4200 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 6023A91A
+P 4600 4700
+F 0 "H4" H 4700 4749 50  0000 L CNN
+F 1 "M3" H 4700 4658 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.7mm_M2.5_ISO7380_Pad_TopBottom" H 4600 4700 50  0001 C CNN
+F 3 "~" H 4600 4700 50  0001 C CNN
+	1    4600 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0101
+U 1 1 60243B30
+P 4000 5100
+F 0 "#PWR0101" H 4000 4850 50  0001 C CNN
+F 1 "Earth" H 4000 4950 50  0001 C CNN
+F 2 "" H 4000 5100 50  0001 C CNN
+F 3 "~" H 4000 5100 50  0001 C CNN
+	1    4000 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4800 3400 4900
+Wire Wire Line
+	3400 4900 3800 4900
+Wire Wire Line
+	4000 4900 4200 4900
+Wire Wire Line
+	4600 4900 4600 4800
+Connection ~ 4000 4900
+Wire Wire Line
+	4200 4800 4200 4900
+Connection ~ 4200 4900
+Wire Wire Line
+	4200 4900 4600 4900
+Wire Wire Line
+	3800 4800 3800 4900
+Connection ~ 3800 4900
+Wire Wire Line
+	3800 4900 4000 4900
+Wire Wire Line
+	4000 4900 4000 5100
+Text Label 6200 4000 0    50   ~ 0
+VCCD
+Wire Wire Line
+	6100 4000 6200 4000
+Wire Wire Line
+	5900 4000 5750 4000
+Text Label 5750 4000 2    50   ~ 0
+VBUS+
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 60261E7D
+P 6000 4000
+F 0 "JP1" H 6000 4212 50  0000 C CNN
+F 1 "CTRL_VBUS+" H 6000 4121 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 6000 4000 50  0001 C CNN
+F 3 "" H 6000 4000 50  0001 C CNN
+	1    6000 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3350 5700 3350
+Wire Wire Line
+	5700 3250 5800 3250
+Wire Wire Line
+	5800 3150 5700 3150
+$Comp
+L power:GNDD #PWR0102
+U 1 1 60282B0A
+P 5700 3350
+F 0 "#PWR0102" H 5700 3100 50  0001 C CNN
+F 1 "GNDD" V 5700 3150 50  0000 C CNN
+F 2 "" H 5700 3350 50  0001 C CNN
+F 3 "" H 5700 3350 50  0001 C CNN
+	1    5700 3350
+	0    1    -1   0   
+$EndComp
+Text Label 5700 3150 2    50   ~ 0
+CAN+
+Text Label 5700 3250 2    50   ~ 0
+CAN-
+$Comp
+L Connector:Screw_Terminal_01x03 JB2
+U 1 1 6023FEC5
+P 6000 3250
+F 0 "JB2" H 6080 3292 50  0000 L CNN
+F 1 "CANBUS" H 6080 3201 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_3-G-3.5_1x03_P3.50mm_Horizontal" H 6000 3250 50  0001 C CNN
+F 3 "~" H 6000 3250 50  0001 C CNN
+	1    6000 3250
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 JA2
+U 1 1 600E8541
+P 6000 2450
+F 0 "JA2" H 6100 2450 50  0000 L CNN
+F 1 "CTRL" H 6100 2350 50  0000 L CNN
+F 2 "1 My Footprints:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Combi_3D-V" H 6400 2900 50  0001 C CNN
+F 3 "~" H 6000 2450 50  0001 C CNN
+F 4 "JST" H 6000 2450 50  0001 C CNN "MANUFACTURER"
+	1    6000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 5250 7700 5300
+$Comp
+L power:Earth #PWR0104
+U 1 1 60270B88
+P 7700 5300
+F 0 "#PWR0104" H 7700 5050 50  0001 C CNN
+F 1 "Earth" H 7700 5150 50  0001 C CNN
+F 2 "" H 7700 5300 50  0001 C CNN
+F 3 "~" H 7700 5300 50  0001 C CNN
+	1    7700 5300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 JB1
+U 1 1 60271595
+P 7700 3250
+F 0 "JB1" H 7800 3300 50  0000 L CNN
+F 1 "AC_IN" H 7800 3200 50  0000 L CNN
+F 2 "1 My Footprints:TerminalBlock_WAGO_236-103_1x03_P5.00mm_PadsOnly" H 7700 3250 50  0001 C CNN
+F 3 "" H 7700 3250 50  0001 C CNN
+F 4 "TE Connectivity" H 7700 3250 50  0001 C CNN "MANUFACTURER"
+F 5 "2342084-3" H 7700 3250 50  0001 C CNN "PN"
+	1    7700 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3150 7500 3150
+$Comp
+L power:LINE #PWR09
+U 1 1 60273255
+P 7400 3150
+F 0 "#PWR09" H 7400 3000 50  0001 C CNN
+F 1 "LINE" V 7415 3278 50  0000 L CNN
+F 2 "" H 7400 3150 50  0001 C CNN
+F 3 "" H 7400 3150 50  0001 C CNN
+	1    7400 3150
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:NEUT #PWR010
+U 1 1 6027325B
+P 7400 3350
+F 0 "#PWR010" H 7400 3200 50  0001 C CNN
+F 1 "NEUT" V 7415 3478 50  0000 L CNN
+F 2 "" H 7400 3350 50  0001 C CNN
+F 3 "" H 7400 3350 50  0001 C CNN
+	1    7400 3350
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:Earth #PWR07
+U 1 1 60273261
+P 7000 3350
+F 0 "#PWR07" H 7000 3100 50  0001 C CNN
+F 1 "Earth" H 7000 3200 50  0001 C CNN
+F 2 "" H 7000 3350 50  0001 C CNN
+F 3 "~" H 7000 3350 50  0001 C CNN
+	1    7000 3350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 3350 7400 3350
+Wire Wire Line
+	7000 3250 7000 3350
+Wire Wire Line
+	7000 3250 7500 3250
+$Comp
+L Connector_Generic:Conn_02x03_Top_Bottom JB3
+U 1 1 60239773
+P 7700 4300
+F 0 "JB3" H 7750 4100 50  0000 C CNN
+F 1 "DC OUT" H 7750 4000 50  0000 C CNN
+F 2 "SnapEDA-zip:TE_2204535-1" H 7700 4300 50  0001 C CNN
+F 3 "~" H 7700 4300 50  0001 C CNN
+	1    7700 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 4200 7500 4200
+$Comp
+L power:Earth #PWR?
+U 1 1 6023B1B6
+P 7000 4400
+F 0 "#PWR?" H 7000 4150 50  0001 C CNN
+F 1 "Earth" H 7000 4250 50  0001 C CNN
+F 2 "" H 7000 4400 50  0001 C CNN
+F 3 "~" H 7000 4400 50  0001 C CNN
+	1    7000 4400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4400 7400 4400
+Text Label 7400 4200 2    50   ~ 0
+VBUS+
+Text Label 7400 4400 2    50   ~ 0
+VBUS-
+Wire Wire Line
+	7500 4300 7000 4300
+Wire Wire Line
+	8100 4200 8000 4200
+$Comp
+L power:Earth #PWR?
+U 1 1 6023DC18
+P 8500 4400
+F 0 "#PWR?" H 8500 4150 50  0001 C CNN
+F 1 "Earth" H 8500 4250 50  0001 C CNN
+F 2 "" H 8500 4400 50  0001 C CNN
+F 3 "~" H 8500 4400 50  0001 C CNN
+	1    8500 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8000 4400 8100 4400
+Text Label 8100 4200 0    50   ~ 0
+VBUS+
+Text Label 8100 4400 0    50   ~ 0
+VBUS-
+Wire Wire Line
+	8000 4300 8500 4300
+Wire Wire Line
+	8500 4300 8500 4400
+Wire Wire Line
+	7000 4300 7000 4400
+Wire Wire Line
+	7400 5050 7500 5050
+Wire Wire Line
+	7500 4950 7400 4950
+Text Label 7400 4950 2    50   ~ 0
+VBUS-
+Text Label 7400 5050 2    50   ~ 0
+VBUS+
+$Comp
+L Connector_Generic_MountingPin:Conn_01x02_MountingPin JC3
+U 1 1 6023C33E
+P 7700 4950
+F 0 "JC3" H 7800 5000 50  0000 L CNN
+F 1 "DC OUT" H 7800 4900 50  0000 L CNN
+F 2 "EltekFlatpack2:Amass_XT60PW-M_Kombifootprint" H 7700 4950 50  0001 C CNN
+F 3 "~" H 7700 4950 50  0001 C CNN
+	1    7700 4950
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

@@ -1,0 +1,280 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Connector_Generic_Conn_01x02
+#
+DEF Connector_Generic_Conn_01x02 J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_Conn_01x02" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x03
+#
+DEF Connector_Generic_Conn_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_01x04
+#
+DEF Connector_Generic_Conn_01x04 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Generic_Conn_01x04" 0 -300 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??_*
+$ENDFPLIST
+DRAW
+S -50 -195 0 -205 1 1 6 N
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 50 -250 1 1 10 f
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 -200 -200 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_Conn_02x03_Top_Bottom
+#
+DEF Connector_Generic_Conn_02x03_Top_Bottom J 0 40 Y N 1 F N
+F0 "J" 50 200 50 H V C CNN
+F1 "Connector_Generic_Conn_02x03_Top_Bottom" 50 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_2x??_*
+$ENDFPLIST
+DRAW
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 105 0 95 1 1 6 N
+S -50 150 150 -150 1 1 10 f
+S 150 -95 100 -105 1 1 6 N
+S 150 5 100 -5 1 1 6 N
+S 150 105 100 95 1 1 6 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+X Pin_4 4 300 100 150 L 50 50 1 1 P
+X Pin_5 5 300 0 150 L 50 50 1 1 P
+X Pin_6 6 300 -100 150 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Generic_MountingPin_Conn_01x02_MountingPin
+#
+DEF Connector_Generic_MountingPin_Conn_01x02_MountingPin J 0 40 Y N 1 F N
+F0 "J" 0 100 50 H V C CNN
+F1 "Connector_Generic_MountingPin_Conn_01x02_MountingPin" 50 -200 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ Connector*:*_1x??-1MP*
+$ENDFPLIST
+DRAW
+T 0 0 -165 15 0 1 1 Mounting Normal 0 C C
+S -50 -95 0 -105 1 1 6 N
+S -50 5 0 -5 1 1 6 N
+S -50 50 50 -150 1 1 10 f
+P 2 1 1 6 -40 -180 40 -180 N
+X Pin_1 1 -200 0 150 R 50 50 1 1 P
+X Pin_2 2 -200 -100 150 R 50 50 1 1 P
+X MountPin MP 0 -300 120 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Connector_Screw_Terminal_01x03
+#
+DEF Connector_Screw_Terminal_01x03 J 0 40 Y N 1 F N
+F0 "J" 0 200 50 H V C CNN
+F1 "Connector_Screw_Terminal_01x03" 0 -200 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ TerminalBlock*:*
+$ENDFPLIST
+DRAW
+C 0 -100 25 1 1 6 N
+C 0 0 25 1 1 6 N
+C 0 100 25 1 1 6 N
+S -50 150 50 -150 1 1 10 f
+P 2 1 1 6 -21 -87 13 -120 N
+P 2 1 1 6 -21 13 13 -20 N
+P 2 1 1 6 -21 113 13 80 N
+P 2 1 1 6 -14 -80 20 -113 N
+P 2 1 1 6 -14 20 20 -13 N
+P 2 1 1 6 -14 120 20 87 N
+X Pin_1 1 -200 100 150 R 50 50 1 1 P
+X Pin_2 2 -200 0 150 R 50 50 1 1 P
+X Pin_3 3 -200 -100 150 R 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_Jumper_NO_Small
+#
+DEF Device_Jumper_NO_Small JP 0 30 N N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Device_Jumper_NO_Small" 10 -60 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+ Jumper*
+ TestPoint*2Pads*
+ TestPoint*Bridge*
+$ENDFPLIST
+DRAW
+C -40 0 20 0 1 0 N
+C 40 0 20 0 1 0 N
+X 1 1 -100 0 40 R 50 50 0 1 P
+X 2 2 100 0 40 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# Device_R_Small
+#
+DEF Device_R_Small R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Device_R_Small" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# EltekFlatpack2_CON_Flatpack2
+#
+DEF EltekFlatpack2_CON_Flatpack2 J? 0 40 Y Y 1 F N
+F0 "J?" -300 900 42 H V L CNN
+F1 "EltekFlatpack2_CON_Flatpack2" 0 -900 50 H I C CNN
+F2 "" 500 -450 50 H I C CNN
+F3 "" 500 -450 50 H I C CNN
+DRAW
+P 2 1 0 0 -300 -850 300 -850 N
+P 2 1 0 0 -300 850 -300 -850 N
+P 2 1 0 0 300 -850 300 850 N
+P 2 1 0 0 300 850 -300 850 N
+X AC-E AC-E 500 -350 200 L 0 50 1 0 W
+X AC-L AC-L 500 -750 200 L 0 50 1 0 W
+X AC-N AC-N 500 -550 200 L 0 50 1 0 W
+X CAN-Hi CAN-H 500 300 200 L 0 50 1 0 B
+X CAN-Lo CAN-L 500 200 200 L 0 50 1 0 B
+X VOUT- DC-NEG 500 550 200 L 0 50 1 0 w
+X VOUT+ DC-POS 500 750 200 L 0 50 1 0 w
+X GNDD GNDD 500 100 200 L 0 50 1 0 w
+ENDDRAW
+ENDDEF
+#
+# Mechanical_MountingHole_Pad
+#
+DEF Mechanical_MountingHole_Pad H 0 40 N N 1 F N
+F0 "H" 0 250 50 H V C CNN
+F1 "Mechanical_MountingHole_Pad" 0 175 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ MountingHole*Pad*
+$ENDFPLIST
+DRAW
+C 0 50 50 0 1 50 N
+X 1 1 0 -100 100 U 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_Earth
+#
+DEF power_Earth #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_Earth" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GNDD
+#
+DEF power_GNDD #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GNDD" 0 -125 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -50 -60 50 -80 0 1 10 F
+P 2 0 1 0 0 0 0 -60 N
+X GNDD 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_LINE
+#
+DEF power_LINE #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_LINE" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X LINE 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_NEUT
+#
+DEF power_NEUT #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_NEUT" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X NEUT 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
