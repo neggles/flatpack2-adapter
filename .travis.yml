@@ -1,4 +1,7 @@
-sudo: required
+os: linux
+dist: bionic
+language: generic
+
 services:
   - docker
 env: SH="docker exec -t container bash -c"

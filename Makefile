@@ -14,7 +14,7 @@ RADIUS=0.75
 all: $(GERBERS) $(JLCGERBERS) build/web/index.html
 
 build/EltekFlatpack2.kicad_pcb: EltekFlatpack2/EltekFlatpack2.kicad_pcb build
-	kikit panelize extractboard -s 110 60 55 40 $< $@
+	kikit panelize extractboard -s 125 68.75 43.75 81 $< $@
 
 build/EltekFlatpack2.sch: EltekFlatpack2/EltekFlatpack2.kicad_pcb build
 	cp EltekFlatpack2/EltekFlatpack2.sch $@
