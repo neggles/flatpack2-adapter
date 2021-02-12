@@ -47,7 +47,7 @@ build/web/index.html: build/web $(BOARD_FILES)
 		-d README.md \
 		--name "Eltek Flatpack2 Adapter" \
 		-b "Eltek Flatpack2 Adapter" "Single board" build/EltekFlatpack2.kicad_pcb  \
-		-b "Eltek Flatpack2 Adapter" "Panel of 3" build/EltekFlatpack2-panel.kicad_pcb  \
+		-b "Eltek Flatpack2 Adapter" "Panel of 2" build/EltekFlatpack2-panel.kicad_pcb  \
 		-r "EltekFlatpack2.png" \
 		--repository "$(GITREPO)"\
 		build/web
