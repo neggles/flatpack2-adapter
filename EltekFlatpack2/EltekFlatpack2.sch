@@ -150,12 +150,12 @@ Wire Wire Line
 $Comp
 L Device:R_Small R1
 U 1 1 601F2C9B
-P 4500 3200
-F 0 "R1" H 4450 3150 50  0000 R CNN
-F 1 "120R" H 4450 3250 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4430 3200 50  0001 C CNN
-F 3 "~" H 4500 3200 50  0001 C CNN
-	1    4500 3200
+P 4600 3200
+F 0 "R1" H 4550 3150 50  0000 R CNN
+F 1 "120R" H 4550 3250 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4530 3200 50  0001 C CNN
+F 3 "~" H 4600 3200 50  0001 C CNN
+	1    4600 3200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -189,31 +189,25 @@ $EndComp
 Wire Wire Line
 	4100 3300 4100 3400
 Wire Wire Line
-	4300 3000 4500 3000
-Text Label 4700 3000 0    50   ~ 0
+	4500 3000 4600 3000
+Text Label 5000 3000 0    50   ~ 0
 CAN+
 Wire Wire Line
-	4300 3400 4500 3400
-Text Label 4700 3400 0    50   ~ 0
+	4500 3400 4600 3400
+Text Label 5000 3400 0    50   ~ 0
 CAN-
 Wire Wire Line
-	4300 3100 4300 3000
+	4500 3100 4500 3000
 Wire Wire Line
-	4000 3100 4300 3100
+	4000 3100 4500 3100
 Wire Wire Line
-	4300 3200 4300 3400
+	4500 3200 4500 3400
 Wire Wire Line
-	4000 3200 4300 3200
+	4000 3200 4500 3200
 Wire Wire Line
-	4500 3000 4500 3100
-Connection ~ 4500 3000
+	4600 3000 4600 3100
 Wire Wire Line
-	4500 3000 4700 3000
-Wire Wire Line
-	4500 3300 4500 3400
-Connection ~ 4500 3400
-Wire Wire Line
-	4500 3400 4700 3400
+	4600 3300 4600 3400
 Text Label 5700 2550 2    50   ~ 0
 CAN-
 Text Label 5700 2450 2    50   ~ 0
@@ -456,10 +450,10 @@ $EndComp
 Wire Wire Line
 	7400 4200 7500 4200
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR011
 U 1 1 6023B1B6
 P 7000 4400
-F 0 "#PWR?" H 7000 4150 50  0001 C CNN
+F 0 "#PWR011" H 7000 4150 50  0001 C CNN
 F 1 "Earth" H 7000 4250 50  0001 C CNN
 F 2 "" H 7000 4400 50  0001 C CNN
 F 3 "~" H 7000 4400 50  0001 C CNN
@@ -477,10 +471,10 @@ Wire Wire Line
 Wire Wire Line
 	8100 4200 8000 4200
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR012
 U 1 1 6023DC18
 P 8500 4400
-F 0 "#PWR?" H 8500 4150 50  0001 C CNN
+F 0 "#PWR012" H 8500 4150 50  0001 C CNN
 F 1 "Earth" H 8500 4250 50  0001 C CNN
 F 2 "" H 8500 4400 50  0001 C CNN
 F 3 "~" H 8500 4400 50  0001 C CNN
@@ -518,4 +512,33 @@ F 3 "~" H 7700 4950 50  0001 C CNN
 	1    7700 4950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 603A2D6D
+P 4900 3200
+F 0 "R2" H 4850 3150 50  0000 R CNN
+F 1 "120R" H 4850 3250 50  0000 R CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4830 3200 50  0001 C CNN
+F 3 "~" H 4900 3200 50  0001 C CNN
+	1    4900 3200
+	-1   0    0    1   
+$EndComp
+Connection ~ 4600 3000
+Connection ~ 4600 3400
+Wire Wire Line
+	4600 3000 4900 3000
+Wire Wire Line
+	4600 3400 4900 3400
+Wire Wire Line
+	4900 3000 4900 3100
+Connection ~ 4900 3000
+Wire Wire Line
+	4900 3000 5000 3000
+Wire Wire Line
+	4900 3300 4900 3400
+Connection ~ 4900 3400
+Wire Wire Line
+	4900 3400 5000 3400
+Text Notes 4500 3650 0    50   ~ 0
+CANBUS Termination\nFit R1 (SMT) or R2 (THT), not both!
 $EndSCHEMATC
