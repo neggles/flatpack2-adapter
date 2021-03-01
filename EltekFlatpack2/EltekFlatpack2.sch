@@ -541,4 +541,34 @@ Wire Wire Line
 	4900 3400 5000 3400
 Text Notes 4500 3650 0    50   ~ 0
 CANBUS Termination\nFit R1 (SMT) or R2 (THT), not both!
+$Comp
+L Connector:Conn_01x01_Male T1
+U 1 1 603CA6F8
+P 8950 3650
+F 0 "T1" H 8922 3582 50  0000 R CNN
+F 1 "Keystone 4912" H 8922 3673 50  0000 R CNN
+F 2 "1 My Footprints:Connector_Keystone_4912_Overlaid" H 8950 3650 50  0001 C CNN
+F 3 "~" H 8950 3650 50  0001 C CNN
+	1    8950 3650
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:Conn_01x01_Male T2
+U 1 1 603CC6BA
+P 8950 3850
+F 0 "T2" H 8922 3782 50  0000 R CNN
+F 1 "Keystone 4912" H 8922 3873 50  0000 R CNN
+F 2 "1 My Footprints:Connector_Keystone_4912_Overlaid" H 8950 3850 50  0001 C CNN
+F 3 "~" H 8950 3850 50  0001 C CNN
+	1    8950 3850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 3650 8750 3650
+Text Label 8650 3650 2    50   ~ 0
+VBUS+
+Wire Wire Line
+	8750 3850 8650 3850
+Text Label 8650 3850 2    50   ~ 0
+VBUS-
 $EndSCHEMATC
