@@ -1,7 +1,7 @@
 .PHONY: all clean web
 
 BOARDS = EltekFlatpack2 EltekFlatpack2-panel
-GITREPO = https://github.com/neg2led/flatpack2-adapter.git
+GITREPO = https://github.com/neg2led/flatpack2-adapter
 JLCFAB_IGNORE = H1,H2,H3,H4,J1,JP2,J2,PS1
 
 BOARD_FILES = $(addprefix build/, $(BOARDS:=.kicad_pcb))
