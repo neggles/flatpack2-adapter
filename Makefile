@@ -48,7 +48,9 @@ build/web/index.html: build/web $(BOARD_FILES)
 		--name "Eltek Flatpack2 Adapter" \
 		-b "Eltek Flatpack2 Adapter" "Single board" build/EltekFlatpack2.kicad_pcb  \
 		-b "Eltek Flatpack2 Adapter" "Panel of 2" build/EltekFlatpack2-panel.kicad_pcb  \
-		-r "EltekFlatpack2.png" \
+		-r "assets/fp2-adapter.jpg" \
+		-r "assets/fp2-adapter-connected.jpg" \
+		-r "assets/EltekFlatpack2-render.png" \
 		--repository "$(GITREPO)"\
 		build/web
 

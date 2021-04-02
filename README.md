@@ -5,7 +5,13 @@ This is my take on the Eltek Flatpack2 HE AC PSU adapter board (may also work wi
 
 I've probably made some really bad design choices here, please don't judge me.
 
-![KiCad raytraced board render](EltekFlatpack2.png)
+### *Update:* I've had a ludicrous number of these made, and they work great! 2oz copper & ENIG plated:
+
+![Photo of finished board](assets/fp2-adapter-connected.jpg)
+
+### Render:
+
+![KiCad raytraced board render](assets/EltekFlatpack2-render.png)
 
 ## Features
 I probably went a little bit overboard with connector options, but I wanted it to be flexible.
@@ -47,6 +53,8 @@ Simply call `make` in the top-top level directory. The `build` directory will th
 - the main board
 - A panelized version of said board
 - zipped gerbers for the boards you can directly use for manufacturing
+
+### Credit where it's due:
 
 Makefile uses [Jan Mrázek](https://github.com/yaqwsx)'s [KiKit](https://github.com/yaqwsx/KiKit), which I cannot recommend enough, and therefore has to be available on your system.
 
