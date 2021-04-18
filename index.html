@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Eltek Flatpack2 Adapter</title>
+</head>
+
+<body>
+    <div class="container mx-auto px-3">
+        <div class="w-full my-3 text-sm text-right bg-gray-200 px-3 py-1">
+            Last update: 18. 04. 2021 03:33
+                (git revision
+                    <a href="https://github.com/neg2led/flatpack2-adapter/tree/dfb1c44c36102f2622c7391f15a305078a4ac330
+">
+                    dfb1c44
+                    </a>)
+        </div>
+
+        <h1>EltekFlatpack2</h1>
+
+<p><a href="https://travis-ci.com/neg2led/flatpack2-adapter"><img src="https://travis-ci.com/neg2led/flatpack2-adapter.svg?branch=master" alt="Build Status" /></a></p>
+
+<p>This is my take on the Eltek Flatpack2 HE AC PSU adapter board (may also work with the DC-DC units); it's got a few nice features I like, like a plethora of connectivity options.</p>
+
+<p>I've probably made some really bad design choices here, please don't judge me.</p>
+
+<h3><em>Update:</em> I've had a ludicrous number of these made, and they work great! 2oz copper &amp; ENIG plated:</h3>
+
+<p><img src="assets/fp2-adapter-connected.jpg" alt="Photo of finished board" /></p>
+
+<h3>Render:</h3>
+
+<p><img src="assets/EltekFlatpack2-render.png" alt="KiCad raytraced board render" /></p>
+
+<h2>Features</h2>
+
+<p>I probably went a little bit overboard with connector options, but I wanted it to be flexible.</p>
+
+<p>JP1 is a solder jumper that connects VOUT+ to J2 pin 1.
+R1 is an optional 120R CANBUS termination resistor.</p>
+
+<h3>AC Input footprints:</h3>
+
+<ul>
+<li>Standard 5.08mm-pitch pluggable terminal block of various kinds (5.0mm ones with small-ish pins should be able to squish into this as well)</li>
+<li>WAGO 256-series (and similar) push-button actuated adjustable-pitch terminal blocks</li>
+</ul>
+
+<h3>Controller CANBUS footprints:</h3>
+
+<ul>
+<li>4-pin 0.1" footprint with pinout VOUT+ CANH CANL GNDD.
+<ul>
+<li>4P vertical Molex Nano-Fit <a href="https://www.molex.com/molex/search/deepSearch?pQuery=q%253D*%253A*%2540fq%253Dcollection%253Aimpulse%2540fq%253Dcollection%253Aimpulse%2540fq%253Dproductseries%253A%2522105309%2522%252BOR%252Bengineeringnumber%253A%2522105309%2522%2540fq%253Dcategory%253A%2522PCB%252BHeaders%2522%2540fq%253Dcircuitsloaded%253A%25224%2522&amp;currentQuery=colorresin%3ABlack&amp;origin=_l1stv13w">series 106309-1x04</a></li>
+<li>4P horizontal Molex Nano-Fit <a href="https://www.molex.com/molex/search/deepSearch?pQuery=q%253D*%253A*%2540fq%253Dcollection%253Aimpulse%2540fq%253Dcollection%253Aimpulse%2540fq%253Dproductseries%253A%2522105313%2522%252BOR%252Bengineeringnumber%253A%2522105313%2522%2540fq%253Dcategory%253A%2522PCB%252BHeaders%2522%2540fq%253Dcircuitsloaded%253A%25224%2522&amp;currentQuery=colorresin%3ABlack&amp;origin=_l1stv13w">105313-1x04</a></li>
+<li>3-pin vertical Molex Nano-Fit <a href="https://www.molex.com/molex/search/deepSearch?pQuery=q%253D*%253A*%2540fq%253Dcollection%253Aimpulse%2540fq%253Dcollection%253Aimpulse%2540fq%253Dproductseries%253A%2522105309%2522%252BOR%252Bengineeringnumber%253A%2522105309%2522%2540fq%253Dcategory%253A%2522PCB%252BHeaders%2522%2540fq%253Dcircuitsloaded%253A%25223%2522&amp;currentQuery=colorresin%3ABlack&amp;origin=_l1stv13w">106309-1x03</a> keys into footprint pins 2-4. No controller power, like the secondary footprint.</li>
+</ul></li>
+<li>3-pin 3.5mm footprint with pinout CANH CANL GNDD (no controller power)
+<ul>
+<li>Regular horizontal or vertical 3.5mm-pitch pluggable terminal block fits here.</li>
+</ul></li>
+</ul>
+
+<h3>DC output footprints:</h3>
+
+<ul>
+<li>TE Connectivity ELCON Mini 3P RA solder-in, <a href="https://www.te.com/usa-en/product-2204529-1.html">P/N 2204529-1</a></li>
+<li>TE Connectivity ELCON Mini 6P RA solder-in, <a href="https://www.te.com/usa-en/product-2204535-1.html">P/N 2204535-1</a>
+<ul>
+<li>These will both take <a href="https://www.te.com/usa-en/product-2204534-1.html">P/N 2204534-1</a> or <a href="https://www.te.com/usa-en/product-2204534-2.html">P/N 2204534-2</a> plugs. Two fit into the 6-pin connector at the same time.</li>
+<li>Contacts are TE's 5.8/6.3mm Standard Power Timer series, like <a href="https://www.te.com/usa-en/product-927837-5.html">P/N 927837-5</a> and are rated for 35A per 3-pin set</li>
+</ul></li>
+<li>Amass XT60-PW solderable PCB-mount XT60 connector, commonly used for drone/RC shenanigans.
+<ul>
+<li>Rated at 30-60A depending on who you ask.</li>
+</ul></li>
+<li>The XT60-PW footprint also contains a 5.08mm terminal block pinout, and exposed pads for direct soldering.</li>
+</ul>
+
+<h2>Repository Structure</h2>
+
+<ul>
+<li><code>EltekFlatpack2</code> contains the KiCad project</li>
+<li><code>EltekFlatpack2/EltekFlatpack2.pretty</code> contains board-specific footprints</li>
+<li><code>EltekFlatpack2/shapes3D</code> contains board-specific STEP models (and a few extra)</li>
+</ul>
+
+<h2>Building</h2>
+
+<p>Simply call <code>make</code> in the top-top level directory. The <code>build</code> directory will then contain:</p>
+
+<ul>
+<li>the main board</li>
+<li>A panelized version of said board</li>
+<li>zipped gerbers for the boards you can directly use for manufacturing</li>
+</ul>
+
+<h3>Credit where it's due:</h3>
+
+<p>Makefile uses <a href="https://github.com/yaqwsx">Jan Mrázek</a>'s <a href="https://github.com/yaqwsx/KiKit">KiKit</a>, which I cannot recommend enough, and therefore has to be available on your system.</p>
+
+<p>Jan's <a href="https://yaqwsx.github.io/jlcparts/">jlcparts</a> app was also extremely useful in narrowing down part choices based on what JLCPCB have available.</p>
+
+<h3>License</h3>
+
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Flatpack2 Adapter</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/neg2led" property="cc:attributionName" rel="cc:attributionURL">neg2led</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+
+
+        <h1>Available files</h1>
+
+            <div class="w-full flex flex-wrap bg-gray-200 py-3 px-3 my-2 rounded">
+                <div class="w-full md:w-1/3">
+                    <h3>Front</h3>
+                    <img src="boards/EltekFlatpack2-front.png" class="boardPreview">
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h3>Back</h3>
+                    <img src="boards/EltekFlatpack2-back.png" class="boardPreview">
+                </div>
+                <div class="w-full md:w-1/3 px-4">
+                    <h3>Eltek Flatpack2 Adapter</h3>
+                    <p>Single board</p>
+                    <p>
+                        <ul>
+                            <li><a href="boards/EltekFlatpack2.kicad_pcb">Download source board</a></li>
+                            <li><a href="boards/EltekFlatpack2-gerbers.zip">Download gerbers</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="w-full flex flex-wrap bg-gray-200 py-3 px-3 my-2 rounded">
+                <div class="w-full md:w-1/3">
+                    <h3>Front</h3>
+                    <img src="boards/EltekFlatpack2-panel-front.png" class="boardPreview">
+                </div>
+                <div class="w-full md:w-1/3">
+                    <h3>Back</h3>
+                    <img src="boards/EltekFlatpack2-panel-back.png" class="boardPreview">
+                </div>
+                <div class="w-full md:w-1/3 px-4">
+                    <h3>Eltek Flatpack2 Adapter</h3>
+                    <p>Panel of 2</p>
+                    <p>
+                        <ul>
+                            <li><a href="boards/EltekFlatpack2-panel.kicad_pcb">Download source board</a></li>
+                            <li><a href="boards/EltekFlatpack2-panel-gerbers.zip">Download gerbers</a></li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        <div class="w-full mt-16 mb-1 p-2 bg-gray-200 text-center txt-xs rounded">
+            Generated by <a href="https://github.com/yaqwsx/KiKit">KiKit</a>
+        </div>
+    </div>
+</body>
+
+</html>
